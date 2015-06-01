@@ -1,5 +1,5 @@
 #include "Draughts.h"
-adam
+#include "structs.h"
 int main()
 {
 	char board[BOARD_SIZE][BOARD_SIZE];
@@ -9,7 +9,23 @@ int main()
 	perror_message("TEST");
 	return 0;
 }
+//little example of use of data structures and printin:
+/*MovesList *movesList = createNewMovesList();
+	Point point0 = createPoint(0, 0);
+	Point point1 = createPoint(1, 0);
+	
+	MoveNode *moveNode0 = createMoveNode(point0);
+	Move move0 = createEmptyMove();
+	appendMoveNodeAtBegining(moveNode0, &move0);
+	MovesListNode *movesListNode0 = createMovesListNode(move0);
+	appendMoveListNodeAtEnd(movesListNode0, movesList);
+	printMovesList(movesList);
 
+	printf("\n");
+
+	MoveNode *moveNode1 = createMoveNode(point1);
+	appendMoveNodeAtEnd(moveNode1, &(movesListNode0->move));
+	printMovesList(movesList);*/
 
 void print_line(){
 	int i;
