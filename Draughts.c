@@ -1,5 +1,5 @@
 #include "Draughts.h"
-
+adam
 int main()
 {
 	char board[BOARD_SIZE][BOARD_SIZE];
